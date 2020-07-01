@@ -1,18 +1,17 @@
 
-let num = 1000
+let num = 910
 let startAngle = 0
 let arc = Math.PI / num
 let ctx
-let outerRadius = 250
+let outerRadius = 225
 let numRadius = 200
 let innerRadius = 0
-let winningNumber
-let winningSegment
-let landingSpot
 
 let canvas = document.getElementById("canvas")
-let playerNumber = document.querySelector("input")
-let message = document.getElementById("message")
+
+canvas.onmouseover = handleSpinIncrease
+canvas.onmouseleave = handleSpinDecrease
+canvas.onclick = handleSpinStop
 
 function drawSphere() {
     ctx = canvas.getContext("2d")
@@ -35,3 +34,15 @@ function drawSphere() {
 }
 
 drawSphere()
+
+function handleSpinIncrease(){
+    canvas.style.animation = "wheelSpin 15s linear"
+}
+
+function handleSpinDecrease(){
+    canvas.style.animation = "wheelSpin 100s linear"
+}
+
+function handleSpinStop(){
+    canvas.style.animation = "wheelSpin 0s linear"
+}

@@ -10,35 +10,39 @@ body {
     color: #4b414a;
     outline: none;
     text-transform: lowercase;
-  }
+}
 
-  header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: 16px;
-      width: 98%;
-      margin-left: 2%;
-  }
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    width: 98%;
+    margin-left: 2%;
+}
 
-  .title {
-      text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.1);
-  }
+.title {
+    text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+
+.title span {
+    color: #c36c30;
+}
   
-  .container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .directions {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 50%;
-  }
+.directions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
   
-  .pointer {
+.pointer {
     width: 0;
     height: 0;
     border-top: 30px solid 	#4b414a;
@@ -47,47 +51,47 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 9;
-  }
+}
   
-  .sphere {
+.sphere {
     width: 500px;
     height: 500px;
     position: relative;
     margin: 130px 0px 180px 0px;
-  }
+}
   
-  #canvas {
+#canvas {
     position: absolute;
     border-radius: 50%;
-  }
+}
   
-  @keyframes wheelSpin {
+@keyframes wheelSpin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(1920deg);
+        transform: rotate(1920deg);
     }
-  }
+}
 
-  .main {
+.main {
     margin: 100px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-  }
+}
 
-  .projects {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      margin-bottom: 180px;
-      text-decoration: none;
-  }
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
 
-  .projects a {
+.lists a {
     text-decoration: none;
     color: #c36c30;
-  }
+}
