@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    font-family: "Orator Std", 'Courier New', serif;
+    font-family: "Orator Std", 'Courier New', Courier, monospace;
     letter-spacing: .1rem;
     font-style: italic;
     background: #f0eadc;
@@ -173,6 +173,11 @@ footer {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+
+    html {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
     main {
         width: 80%;
         font-size: 11px;
