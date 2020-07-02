@@ -10,6 +10,7 @@ body {
     color: #4b414a;
     outline: none;
     text-transform: lowercase;
+    font-size: 13px;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
 
 .title {
     text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
 .title span {
@@ -75,23 +77,83 @@ header {
 }
 
 .main {
-    margin: 100px 20px;
+    margin: 100px 20px 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    max-width: 1000px;
 }
 
 .lists {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
-    margin-bottom: 50px;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
     text-decoration: none;
 }
 
 .lists a {
     text-decoration: none;
     color: #c36c30;
+    margin: 0px 10px;
+}
+
+.project {
+    width: 400px;
+    height: 200px;
+    margin: 15px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.languages {
+    font-size: 12px;
+}
+
+.contact {
+    width: 400px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 16px;
+    width: 98%;
+    margin-left: 2%;
+}
+
+.box {
+    width: 390px;
+    height: 140px;
+    border: solid .25px #c36c30;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.link {
+    width: 140px;
+    display: flex;
+}
+
+footer {
+    width: 98%;
+    text-align: right;
+    margin-right: 2%;
+    margin-bottom: 10px;
 }
