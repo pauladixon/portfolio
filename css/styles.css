@@ -77,12 +77,12 @@ header {
 }
 
 .main {
-    margin: 100px 20px 50px 20px;
+    margin: 100px 20px 15px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .lists {
@@ -101,9 +101,17 @@ header {
 }
 
 .project {
-    width: 400px;
+    width: 370px;
     height: 200px;
-    margin: 15px;
+    margin: 15px 25px;
+}
+
+.one {
+    margin-bottom: 50px;
+} 
+
+.description {
+    letter-spacing: 0rem;
 }
 
 .project-title {
@@ -126,8 +134,8 @@ header {
 }
 
 .contact {
-    width: 400px;
-    height: 130px;
+    width: 385px;
+    height: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,14 +143,16 @@ header {
     font-size: 16px;
     width: 98%;
     margin-left: 2%;
+    margin-top: 16px;
 }
 
 .box {
-    width: 390px;
+    width: 385px;
     height: 140px;
     border: solid .25px #c36c30;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -157,3 +167,13 @@ footer {
     margin-right: 2%;
     margin-bottom: 10px;
 }
+
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    main {
+        width: 100%;
+    }
+} */

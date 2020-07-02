@@ -36,7 +36,7 @@ function drawSphere() {
 drawSphere()
 
 function handleSpinIncrease(){
-    canvas.style.animation = "wheelSpin 15s linear infinite"
+    canvas.style.animation = "wheelSpin 10s linear infinite"
 }
 
 function handleSpinDecrease(){
