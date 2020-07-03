@@ -44,12 +44,12 @@ function handleSpinStop(){
 
 function handleResize(){
     if (window.innerWidth < 376) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        canvas.style.width = 375
-        canvas.style.height = 375
-        drawSphere(237.5, 237.5, 212.15)
-    } else if (window.innerWidth > 375) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawSphere()
+        // ctx.clearRect(0, 0, 325, 325);
+        canvas.style.width = 325
+        canvas.style.height = 325
+        // drawSphere(187.5, 187.5, 162.5)
+    // } else if (window.innerWidth > 375) {
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //     drawSphere()
     }
 }
