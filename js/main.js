@@ -1,5 +1,5 @@
 
-let num = 2600
+let num = 630
 let startAngle = 0
 let arc = Math.PI / num
 let ctx
@@ -11,13 +11,13 @@ canvas.onmouseover = handleSpinIncrease
 canvas.onmouseleave = handleSpinDecrease
 canvas.onclick = handleSpinStop
 
-function drawSphere(x = 250, y = 250, outerRadius = 225) {
+function drawSphere(x = 225, y = 225, outerRadius = 225) {
     ctx = canvas.getContext("2d")
     for (let i = 0; i < num*2; i++) {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
-            ctx.fillStyle = "#6d6876"
-        } else ctx.fillStyle = "white"
+            ctx.fillStyle = "#291f17"
+        } else ctx.fillStyle = "#f0eadc"
         ctx.beginPath()
         ctx.arc(x, y, outerRadius, angle, angle + arc, false)
         ctx.arc(x, y, 0, angle + arc, angle, true)
