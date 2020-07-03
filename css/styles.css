@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -13,6 +20,7 @@ body {
     outline: none;
     text-transform: lowercase;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -84,7 +92,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    max-width: 100%;
+    max-width: 1000px;
 }
 
 .lists {
@@ -179,22 +187,45 @@ footer {
     body {
         font-family: 'Courier New', Courier, monospace;
         font-size: 9px;
-        width: 10%;
+    }
+
+    .sphere {
+        width: 375px !important;
+        height: 375px !important;
+    }
+
+    #canvas {
+        width: 375px !important;
+        height: 375px !important;
     }
 
     main {
+        max-width: 375px;
+        margin-left: -4.25px;
+    }
+
+    .main {
         font-size: 11px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row wrap;
     }
+    .project-grid {
+        width: 375px;
+    }
+
+    .project:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        width: 300px;
+    }
 
     .title {
         font-size: 13px;
-    }
-
-    html {
     }
 
     .contact {
