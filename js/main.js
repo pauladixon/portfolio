@@ -1,5 +1,4 @@
-
-let num = 910
+let num = 1250
 let startAngle = 0
 let arc = Math.PI / num
 let ctx
@@ -19,7 +18,7 @@ function drawSphere() {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
             ctx.fillStyle = "#c7a984"
-        } else ctx.fillStyle = "#cccccc"
+        } else ctx.fillStyle = "#aaaaaa"
         ctx.beginPath()
         ctx.arc(250, 250, outerRadius, angle, angle + arc, false)
         ctx.arc(250, 250, innerRadius, angle + arc, angle, true)
@@ -30,17 +29,17 @@ function drawSphere() {
         ctx.rotate(angle + arc / 2 + Math.PI / 2)
         ctx.restore()
     }
-    canvas.style.animation = "wheelSpin 100s linear infinite"
+    canvas.style.animation = "wheelSpin 32s linear infinite"
 }
 
 drawSphere()
 
 function handleSpinIncrease(){
-    canvas.style.animation = "wheelSpin 10s linear infinite"
+    canvas.style.animation = "wheelSpin .000032s linear infinite"
 }
 
 function handleSpinDecrease(){
-    canvas.style.animation = "wheelSpin 100s linear infinite"
+    canvas.style.animation = "wheelSpin 32s linear infinite"
 }
 
 function handleSpinStop(){

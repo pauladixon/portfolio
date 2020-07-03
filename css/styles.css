@@ -7,6 +7,8 @@ body {
     letter-spacing: .1rem;
     font-style: italic;
     background: #f0eadc;
+    /* background-color: #a1a1a1; */
+    /* background-color: #c7a984e7; */
     color: #4b414a;
     outline: none;
     text-transform: lowercase;
@@ -174,26 +176,25 @@ footer {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 
-    html {
+    body {
         font-family: 'Courier New', Courier, monospace;
+        font-size: 9px;
+        width: 10%;
     }
 
     main {
-        width: 80%;
         font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
     }
 
     .title {
         font-size: 13px;
     }
 
-    .canvas {
-        width: 80%;
-        height: 80%;
-    }
-
     html {
-        font-size: 12px;
     }
 
     .contact {
