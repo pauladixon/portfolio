@@ -197,14 +197,14 @@ footer {
   and (orientation: portrait) { 
 
     .sphere {
-        width: 325px !important;
-        height: 325px !important;
+        width: 250px !important;
+        height: 250px !important;
         margin-left: 5px;
     }
 
     #canvas {
-        width: 325px !important;
-        height: 325px !important;
+        width: 250px !important;
+        height: 250px !important;
     }
 
     main {
