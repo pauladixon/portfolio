@@ -1,26 +1,30 @@
 
 let num = 630
+let r = 225
 let startAngle = 0
 let arc = Math.PI / num
 let ctx
 
 let canvas = document.getElementById("canvas")
-window.addEventListener('resize', handleResize)
 
 canvas.onmouseover = handleSpinIncrease
 canvas.onmouseleave = handleSpinDecrease
 canvas.onclick = handleSpinStop
 
-function drawSphere(x = 225, y = 225, outerRadius = 225) {
+canvas.addEventListener('touchstart', handleSpinIncrease)
+canvas.addEventListener('touchend', handleSpinDecrease)
+canvas.addEventListener('touchcancel', handleSpinStop)
+
+function drawSphere() {
     ctx = canvas.getContext("2d")
     for (let i = 0; i < num*2; i++) {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
-            ctx.fillStyle = "#291f17"
+            ctx.fillStyle = "	#291f17"
         } else ctx.fillStyle = "#f0eadc"
         ctx.beginPath()
-        ctx.arc(x, y, outerRadius, angle, angle + arc, false)
-        ctx.arc(x, y, 0, angle + arc, angle, true)
+        ctx.arc(r, r, r, angle, angle + arc, false)
+        ctx.arc(r, r, 0, angle + arc, angle, true)
         ctx.fill()
         ctx.save()
         ctx.restore()
@@ -40,17 +44,4 @@ function handleSpinDecrease(){
 
 function handleSpinStop(){
     canvas.style.animation = "wheelSpin 0s linear"
-}
-
-function handleResize(){
-    if (window.innerWidth < 376) {
-        canvas.onclick = handleSpinIncrease()
-        // ctx.clearRect(0, 0, 325, 325);
-        // canvas.style.width = 325
-        // canvas.style.height = 325
-        // drawSphere(187.5, 187.5, 162.5)
-    // } else if (window.innerWidth > 375) {
-    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    //     drawSphere()
-    }
 }
