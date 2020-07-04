@@ -21,8 +21,8 @@ function drawSphere() {
     for (let i = 0; i < num*2; i++) {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
-            ctx.fillStyle = "#291f17"
-        } else ctx.fillStyle = "#f0eadc"
+            ctx.fillStyle = "#241a1a"
+        } else ctx.fillStyle = "#efeadd"
         ctx.beginPath()
         ctx.arc(r, r, r, angle, angle + arc, false)
         ctx.arc(r, r, 0, angle + arc, angle, true)

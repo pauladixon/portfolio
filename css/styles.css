@@ -17,6 +17,7 @@ body {
     letter-spacing: .05rem;
     color: #4b414a;
     background: #f0eadc;
+    /* background-color: #241a1a; */
     outline: none;
     font-size: 13.5px;
     overflow-x: hidden;
@@ -207,7 +208,7 @@ footer {
     }
 
     main {
-        max-width: 350px;
+        max-width: 360px;
         margin-left: -4.25px;
     }
 
