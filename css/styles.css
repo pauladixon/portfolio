@@ -198,6 +198,7 @@ footer {
     .sphere {
         width: 325px !important;
         height: 325px !important;
+        margin-left: 5px;
     }
 
     #canvas {

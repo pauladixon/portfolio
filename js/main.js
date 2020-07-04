@@ -5,7 +5,7 @@ let arc = Math.PI / num
 let ctx
 
 let canvas = document.getElementById("canvas")
-// window.addEventListener('resize', handleResize)
+window.addEventListener('resize', handleResize)
 
 canvas.onmouseover = handleSpinIncrease
 canvas.onmouseleave = handleSpinDecrease
@@ -42,14 +42,15 @@ function handleSpinStop(){
     canvas.style.animation = "wheelSpin 0s linear"
 }
 
-// function handleResize(){
-//     if (window.innerWidth < 376) {
-//         // ctx.clearRect(0, 0, 325, 325);
-//         // canvas.style.width = 325
-//         // canvas.style.height = 325
-//         drawSphere(187.5, 187.5, 162.5)
-//     // } else if (window.innerWidth > 375) {
-//     //     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     //     drawSphere()
-//     }
-// }
+function handleResize(){
+    if (window.innerWidth < 376) {
+        canvas.onclick = handleSpinIncrease()
+        // ctx.clearRect(0, 0, 325, 325);
+        // canvas.style.width = 325
+        // canvas.style.height = 325
+        // drawSphere(187.5, 187.5, 162.5)
+    // } else if (window.innerWidth > 375) {
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //     drawSphere()
+    }
+}
