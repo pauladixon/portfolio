@@ -1,5 +1,5 @@
 
-let num = 630
+let num = 790
 let r = 225
 let startAngle = 0
 let arc = Math.PI / num
@@ -12,14 +12,16 @@ canvas.onmouseleave = handleSpinDecrease
 canvas.onclick = handleSpinStop
 
 canvas.addEventListener('touchstart', handleSpinIncrease)
-canvas.addEventListener('touchcancel', handleSpinDecrease)
+canvas.addEventListener('touchmove', handleSpinDecrease)
+canvas.addEventListener('touchend', handleSpinDecrease)
+canvas.addEventListener('touchcancel', handleSpinStop)
 
 function drawSphere() {
     ctx = canvas.getContext("2d")
     for (let i = 0; i < num*2; i++) {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
-            ctx.fillStyle = "black"
+            ctx.fillStyle = "#291f17"
         } else ctx.fillStyle = "#f0eadc"
         ctx.beginPath()
         ctx.arc(r, r, r, angle, angle + arc, false)
