@@ -12,15 +12,14 @@ canvas.onmouseleave = handleSpinDecrease
 canvas.onclick = handleSpinStop
 
 canvas.addEventListener('touchstart', handleSpinIncrease)
-canvas.addEventListener('touchend', handleSpinDecrease)
-canvas.addEventListener('touchcancel', handleSpinStop)
+canvas.addEventListener('touchcancel', handleSpinDecrease)
 
 function drawSphere() {
     ctx = canvas.getContext("2d")
     for (let i = 0; i < num*2; i++) {
         let angle = startAngle + (i * arc)
         if (i%2 === 0) {
-            ctx.fillStyle = "	#291f17"
+            ctx.fillStyle = "black"
         } else ctx.fillStyle = "#f0eadc"
         ctx.beginPath()
         ctx.arc(r, r, r, angle, angle + arc, false)
